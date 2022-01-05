@@ -1,3 +1,14 @@
+# **Experimental**
+# import subprocess
+# import sys
+
+# def install(package):
+#     subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
+# install("pyautogui")
+# install("colorama")
+
+
 import time
 import pyautogui
 from colorama import init, Fore, Style
