@@ -17,14 +17,14 @@ from colorama import init, Fore, Style
 
 def SendMessage():
     pyautogui.typewrite('@' + tag + " ")
-    pyautogui.click()
     time.sleep(2)
+    pyautogui.click()
     pyautogui.typewrite('@' + tag2 + " ")
-    pyautogui.click()
     time.sleep(2) 
+    pyautogui.click()
     pyautogui.typewrite('@' + tag3 + " ")
+    time.sleep(2)
     pyautogui.click()
-    time.sleep(2) 
     # pyautogui.typewrite(text)
     pyautogui.press('enter')
     time.sleep(4)                           # Βαλε αυτο για delay
