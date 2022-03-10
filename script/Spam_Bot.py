@@ -22,9 +22,9 @@ def SendMessage():
     pyautogui.click()
     pyautogui.typewrite('@' + tag3 + " ")
     pyautogui.click()
-    pyautogui.typewrite(text)
+    # pyautogui.typewrite(text)
     pyautogui.press('enter')
-    time.sleep(4)       # Βαλε αυτο για delay
+    time.sleep(4)                           # Βαλε αυτο για delay
 
 
 init(autoreset=True)
@@ -42,7 +42,7 @@ print("""
 
 """)
 print("\n***************************************************************")
-text = str(input("Enter the message you want to send: "))
+# text = str(input("Enter the message you want to send: "))
 tag = str(input("Enter the tag 1: "))
 tag2 = str(input("Enter the tag 2: "))
 tag3 = str(input("Enter the tag 3: "))
