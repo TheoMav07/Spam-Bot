@@ -1,3 +1,4 @@
+from operator import indexOf
 import subprocess
 import sys
 
@@ -15,8 +16,11 @@ from colorama import init, Fore, Style
 
 
 def SendMessage():
+    pyautogui.typewrite('@' + tag + " ")
+    pyautogui.click()
     pyautogui.typewrite(text)
     pyautogui.press('enter')
+    time.sleep(4)       # Βαλε αυτο για delay
 
 
 init(autoreset=True)
@@ -35,6 +39,7 @@ print("""
 """)
 print("\n***************************************************************")
 text = str(input("Enter the message you want to send: "))
+tag = str(input("Enter the tag: "))
 input1 = int(input("Enter the number of messages you want to send: "))
 print("You have 20 seconds to go to the app you want to send the messages")
 time.sleep(20)
